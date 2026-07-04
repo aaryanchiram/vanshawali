@@ -1,0 +1,6 @@
+{
+  "name": "VanshVriksh",
+  "description": "Professional and secure modern family tree builder with encryption, cloud backup options, customizable themes, and offline sharing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
