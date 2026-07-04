@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Tree Trunk with roots -->
+    <path
+        android:pathData="M52,65 L52,78 L44,82 L46,84 L54,80 L62,84 L64,82 L56,78 L56,65 Z"
+        android:fillColor="#E5A65D" /> <!-- Gold / Bronze trunk -->
+
+    <!-- Canopy Layer 1 (Darker green background cloud) -->
+    <path
+        android:pathData="M54,26 C36,26 32,44 42,52 C32,58 40,70 54,66 C68,70 76,58 66,52 C76,44 72,26 54,26 Z"
+        android:fillColor="#4CAF50" /> <!-- Material Green -->
+
+    <!-- Canopy Layer 2 (Lighter highlighting cloud) -->
+    <path
+        android:pathData="M54,29 C40,29 37,42 45,49 C37,54 44,64 54,61 C64,64 71,54 63,49 C71,42 68,29 54,29 Z"
+        android:fillColor="#8BC34A" /> <!-- Light Green -->
+
+    <!-- Connections/Branches inside canopy (Family lines) -->
+    <path
+        android:pathData="M54,34 L54,54 M54,42 L42,48 M54,44 L66,48"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round" />
+
+    <!-- Family Members (Circular Nodes) -->
+    <!-- Root Node (Top Ancestor) -->
+    <group android:translateX="54" android:translateY="34">
+        <path
+            android:pathData="M0,0 M-3,0 A3,3 0 1,1 3,0 A3,3 0 1,1 -3,0"
+            android:fillColor="#FFD700" /> <!-- Gold Node -->
+    </group>
+
+    <!-- Branch Nodes left -->
+    <group android:translateX="42" android:translateY="48">
+        <path
+            android:pathData="M0,0 M-2.5,0 A2.5,2.5 0 1,1 2.5,0 A2.5,2.5 0 1,1 -2.5,0"
+            android:fillColor="#FFFFFF" />
+    </group>
+
+    <!-- Center Node -->
+    <group android:translateX="54" android:translateY="54">
+        <path
+            android:pathData="M0,0 M-2.5,0 A2.5,2.5 0 1,1 2.5,0 A2.5,2.5 0 1,1 -2.5,0"
+            android:fillColor="#FFFFFF" />
+    </group>
+
+    <!-- Branch Nodes right -->
+    <group android:translateX="66" android:translateY="48">
+        <path
+            android:pathData="M0,0 M-2.5,0 A2.5,2.5 0 1,1 2.5,0 A2.5,2.5 0 1,1 -2.5,0"
+            android:fillColor="#FFFFFF" />
+    </group>
+
+</vector>
